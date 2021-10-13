@@ -1,96 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Schemescape</title>
-        <meta name="description" content="Browser-based games and other side projects" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <style>
-            :root { color-scheme: light dark; }
+	<head>
+		<meta charset="utf-8" />
+		<title>Schemescape</title>
+		<meta name="description" content="List of projects by a life-long coder" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<style>
+			:root { color-scheme: light dark; }
+			html, body { margin: 0; }
 
-            html, body {
-                margin: 0;
-            }
+			body {
+				display: flex;
+				justify-content: center;
+				font-family: sans-serif;
+				overflow-y: scroll;
+			}
 
-            body {
-                display: flex;
-                justify-content: center;
-                font-family: sans-serif;
-                overflow-y: scroll;
-            }
+			h1 { text-align: center; }
+			main { padding: 0.5em; }
 
-            h1 {
-                text-align: center;
-            }
+			section {
+				padding-top: 0.25em;
+				padding-bottom: 0.25em;
+			}
 
-            main {
-                padding: 0.5em;
-            }
+			ul { padding-left: 0.5em; }
 
-            section {
-                padding-top: 0.25em;
-                padding-bottom: 0.25em;
-            }
+			li {
+				list-style: none;
+				position: relative;
+				left: 0em;
+				margin-bottom: 0.5em;
+			}
 
-            ul {
-                padding-left: 0.5em;
-            }
-
-            li {
-                list-style: none;
-                position: relative;
-                left: 0em;
-                margin-bottom: 0.5em;
-            }
-
-            span.icon {
-                font-family: "Segoe UI Emoji";
-            }
-        </style>
-    </head>
-    <body>
-        <main>
-            <header><h1>Schemescape</h1></header>
-            <section>
-                <h2>Blog</h2>
-                <ul>
-                    <li><span class="icon">📖</span> <a href="https://log.schemescape.com/">Development log of a life-long coder</a></li>
-                </ul>
-            </section>
-            <section>
-                <h2>Games</h2>
-                <ul>
-                    <li><span class="icon">🖥</span> <a href="https://jaredkrinke.itch.io/sic-1">SIC-1</a>: Single-instruction (subleq) computer programming game (2020)</li>
-                    <li><span class="icon">⌨</span> <a href="https://jaredkrinke.itch.io/cyber-coliseum">Cyber Coliseum</a>: Program robots to battle using JavaScript (2020)</li>
-                    <li><span class="icon">🧱</span> <a href="https://jaredkrinke.itch.io/fbgp8">Falling Block Game</a>: Block-stacking game, with global high scores (2019)</li>
-                    <li><span class="icon">🎁</span> <a href="https://jaredkrinke.itch.io/christmas-delivery">Christmas Delivery</a>: Two-button arcade game for <a href="https://www.lexaloffle.com/pico-8.php">PICO-8</a> (2018)</li>
-                    <li><span class="icon">🚀</span> <a href="https://jaredkrinke.itch.io/chromium-jsu">Chromium JSU</a>: Browser port of Mark B. Allan's <a href="http://chromium-bsu.sourceforge.net/">Chromium BSU</a> (2014)</li>
-                    <li><span class="icon">⬜</span> <a href="https://jaredkrinke.itch.io/avoisionjs">AvoisionJS</a>: Arcade game about avoiding other squares (2014)</li>
-                </ul>
-            </section>
-            <section>
-                <h2>Projects</h2>
-                <ul>
-                    <li><span class="icon">🌌</span> <a href="https://github.com/jaredkrinke/no-mans-sky-screenshots">No Man's Sky Screenshots</a>: Pretty pictures of alien worlds (2021)</li>
-                    <li><span class="icon">🕹</span> <a href="https://github.com/jaredkrinke/avr-n64-usb">avr-n64-usb</a>: USB adapter for Nintendo 64 controllers (2020)</li>
-                    <li><span class="icon">📃</span> <a href="http://jaredkrinke.github.io/learn-scheme/">Learn Scheme</a>: Browser-based environment for learning Lisp (2015)</li>
-                </ul>
-            </section>
-            <section>
-                <h2>Music</h2>
-                <ul>
-                    <li><span class="icon">🔆</span> <a href="https://soundcloud.com/schemescape/cga-sunset">CGA Sunset</a> (2020)</li>
-                </ul>
-            </section>
-            <section>
-                <h2>Links</h2>
-                <ul>
-                    <li><span class="icon">📖</span> <a href="https://log.schemescape.com/">Blog</a> (log.schemescape.com)</li>
-                    <li><span class="icon">🎮</span> <a href="https://jaredkrinke.itch.io/">Games</a> (itch.io)</li>
-                    <li><span class="icon">🎵</span> <a href="https://soundcloud.com/schemescape">Music</a> (SoundCloud)</li>
-                    <li><span class="icon">📚</span> <a href="https://github.com/jaredkrinke">Source code</a> (GitHub)</li>
-                </ul>
-            </section>
-        </main>
-    </body>
+			span.icon { font-family: "Segoe UI Emoji"; }
+		</style>
+	</head>
+	<body>
+		<main>
+			<header><h1>Schemescape</h1></header>
+			<section>
+				<h2>Blog</h2>
+				<ul>
+					<li><span class="icon">📖</span> <a href="https://log.schemescape.com/">Development log of a life-long coder</a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Games</h2>
+				<ul>
+					<li><span class="icon">🖥</span> <a href="https://jaredkrinke.itch.io/sic-1">SIC-1</a>: Single-instruction (subleq) computer programming game (2020)</li>
+					<li><span class="icon">⌨</span> <a href="https://jaredkrinke.itch.io/cyber-coliseum">Cyber Coliseum</a>: Program robots to battle using JavaScript (2020)</li>
+					<li><span class="icon">🧱</span> <a href="https://jaredkrinke.itch.io/fbgp8">Falling Block Game</a>: Block-stacking game, with global high scores (2019)</li>
+					<li><span class="icon">🎁</span> <a href="https://jaredkrinke.itch.io/christmas-delivery">Christmas Delivery</a>: Two-button arcade game for <a href="https://www.lexaloffle.com/pico-8.php">PICO-8</a> (2018)</li>
+					<li><span class="icon">🚀</span> <a href="https://jaredkrinke.itch.io/chromium-jsu">Chromium JSU</a>: Browser port of Mark B. Allan's <a href="http://chromium-bsu.sourceforge.net/">Chromium BSU</a> (2014)</li>
+					<li><span class="icon">⬜</span> <a href="https://jaredkrinke.itch.io/avoisionjs">AvoisionJS</a>: Arcade game about avoiding other squares (2014)</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Projects</h2>
+				<ul>
+					<li><span class="icon">🌌</span> <a href="https://github.com/jaredkrinke/no-mans-sky-screenshots">No Man's Sky Screenshots</a>: Pretty pictures of alien worlds (2021)</li>
+					<li><span class="icon">🕹</span> <a href="https://github.com/jaredkrinke/avr-n64-usb">avr-n64-usb</a>: USB adapter for Nintendo 64 controllers (2020)</li>
+					<li><span class="icon">📃</span> <a href="http://jaredkrinke.github.io/learn-scheme/">Learn Scheme</a>: Browser-based environment for learning Lisp (2015)</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Music</h2>
+				<ul>
+					<li><span class="icon">🔆</span> <a href="https://soundcloud.com/schemescape/cga-sunset">CGA Sunset</a> (2020)</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Links</h2>
+				<ul>
+					<li><span class="icon">📖</span> <a href="https://log.schemescape.com/">Blog</a> (log.schemescape.com)</li>
+					<li><span class="icon">🎮</span> <a href="https://jaredkrinke.itch.io/">Games</a> (itch.io)</li>
+					<li><span class="icon">🎵</span> <a href="https://soundcloud.com/schemescape">Music</a> (SoundCloud)</li>
+					<li><span class="icon">📚</span> <a href="https://github.com/jaredkrinke">Source code</a> (GitHub)</li>
+				</ul>
+			</section>
+		</main>
+	</body>
 </html>
